@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kranky&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kranky', cursive;
+      background-color: #B2AC88;
+      text-align: center;
+      color: #F12F2F;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 2rem; 
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: #F5CD62;
+    } 
+    h3 {
+      font-size: 1rem;
+      color: #F5CD62; 
+      margin-top: 0;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #000000;
+    }
+
+    button {
+      font-family:'Kranky', cursive;
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem;
+      background-color: rgba(217, 217, 217, 0.25);
+      color: #F12F2F;;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; 
+    }
+
+    button:hover {
+      color: #C02727;
+    }
+
+    #content {
+      display: none;
+      margin: 2rem;
+      padding: 2rem;
+      background-color: #F4DDB8;
+      color: #000000;
+      border-radius: 15px;
+      text-align: left;
+    } 
+    #addressing{ 
+        color: #F12F2F;
+    }
+    #sender{ 
+        color: #F12F2F;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+
+      #content {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body> 
+  <div> 
+    <h1>Merry Christmas!</h1>
+    <h3>To: My Precious Patrieka</h3>
+  </div>
+  <div> 
+    <h2>Click the Button to See your gift.</h2>
+  <button id="toggleButton">OPEN!</button>
+  </div>
+  
+
+  <div id="content">
+    <h2 id="addressing">To: My Precious Patrieka</h2>
+    <p>
+      I know that you might think that I am good with words but there are many times that I am truly at a loss of them because of you. 
+      I know that I am quite vocal about the things I like about you, but after you sent me such a sweet and loving message how could 
+      I not respond with my own for you. So I will break this message down into three parts. The first being what you are, the second 
+      what you have done, and the third being what you mean to me.
+    </p>
+    <p>
+      What you are: You are such a beautiful woman. Your eyes are so bright (I know I’ve told you this a million times) and expressive, 
+      they pull me in stronger than gravity can keep me on this earth. They sparkle more than the stars in the night sky. Your smile is 
+      absolutely radiant. Honestly, I feel like I should be wearing sunglasses to see it, because it is wayyy too bright. I love all your 
+      cute hairstyles, you mix it up and yet you never managed to look anything short of being absolutely adorable. Your ass, hips and tummy, 
+      well you know more than enough about what I think about them. I really don’t need to say it here.
+    </p>
+    <p>
+      What you have done: From the kisses, to the baked goods, to the gifts really a better question is what have you not done. All of these 
+      things from big to small, every single thing means more things to me than you could ever know. You have made it possible for me to feel 
+      safe in my relationships again. You have allowed me to feel loved and appreciated. You have made me worthy of belonging to someone again. 
+      You have done so much more for me than you could ever know, so from the bottom of my heart THANK YOU for just being you.
+    </p>
+    <p>
+      What you mean to me: You mean not just the world to me, you mean the solar system, the galaxy, the universe. You mean so much to me, 
+      I genuinely do not know how to put it into words. You are my precious, cute, funny, driven, smart, attentive, kind, caring, loving, 
+      ambitious Patrieka. Thank you for coming into my life and I very much look forward to our future.
+    </p>
+    <h2 id="sender">
+      From: Your Mustafa ❤️
+    </h2>
+  </div>
+
+  <script>
+    const button = document.getElementById('toggleButton');
+    const content = document.getElementById('content');
+
+    button.addEventListener('click', () => {
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        button.textContent = 'CLOSE!';
+      } else {
+        content.style.display = 'none';
+        button.textContent = 'OPEN!';
+      }
+    });
+  </script>
+</body>
+</html>
